@@ -8,7 +8,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   if Rails.env.production?
     storage :fog
   else
-    storage :File
+    storage :file
   end
   # storage :fog
 

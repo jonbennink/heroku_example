@@ -1,7 +1,8 @@
-Config Variables
-Create a new file in config/initializers
-called carrierwave.rb
+# Config Variables
+# Create a new file in config/initializers
+# called carrierwave.rb
 # config/initiliazers/carrierwave.rb
+
 CarrierWave.configure do |config|
   config.fog_credentials = {
     :provider              => 'AWS',
