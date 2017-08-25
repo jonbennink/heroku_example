@@ -14,6 +14,9 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
+        <% if user.avatar.blank? == false %>
+          <td><%= image_tag user.avatar.url, size:50, class: "user-pic-nav" %></td>
+        <% end %>
         <td><%= user.name %></td>
         <td><%= user.team_id %></td>
         <td><%= link_to 'Show', user %></td>
